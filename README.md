@@ -4,7 +4,7 @@ API to pull information from the Discogs marketplace.  Returns an object.
 
 
 ##Installation
-[![NPM](https://nodei.co/npm/discogs_market_api.png)](https://nodei.co/npm/discogs_market_api/)
+[![NPM](https://nodei.co/npm/discogs_marketplace_api.png)](https://nodei.co/npm/discogs_marketplace_api/)
 
 ## TODO:
 * Provide useage example
