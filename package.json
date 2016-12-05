@@ -1,5 +1,5 @@
 {
-  "name": "discogs_market_api",
+  "name": "discogs_marketplace_api",
   "version": "1.0.0",
   "description": "API for searching Discogs marketplace, returns an object.",
   "main": "index.js",
