@@ -2,7 +2,7 @@
   "name": "discogs_market_api",
   "version": "2.0.0",
   "description": "API for searching Discogs marketplace, returns an object.",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
