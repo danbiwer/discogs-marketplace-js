@@ -5,6 +5,6 @@ Author: Daniel Biwer (danbiwer@gmail.com)
 
 'use strict';
 
-var DiscogsMarketplaceAPI = module.exports = {};
+var DiscogsMarketplaceAPI = require('./lib/search.js');
 
-DiscogsMarketplaceAPI = require('./lib/search.js');
+module.exports = DiscogsMarketplaceAPI;
