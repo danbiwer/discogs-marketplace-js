@@ -1,6 +1,6 @@
 # DiscogsMarketplace.js
 
-Javascript library to pull information from the Discogs marketplace.  Returns an object.
+JavaScript library to pull information from the Discogs marketplace.  Returns an object.
 
 
 ##Usage
@@ -14,7 +14,7 @@ var marketplace = require('DiscogsMarketplace-js');
 ####Search By ID
 
 ````javascript
-DMS.searchByID('m1234', function(result){
+marketplace.searchByID('m1234', function(result){
 	if(typeof result !== error)
 		console.log(result);
 });
@@ -23,7 +23,7 @@ DMS.searchByID('m1234', function(result){
 ####Search By String
 
 ````javascript
-DMS.searchByID("Black Sabbath", function(result){
+marketplace.searchByID("Black Sabbath", function(result){
 	if(typeof result !== error)
 		console.log(result);
 });
@@ -64,6 +64,6 @@ DMS.searchByID(search_parameters, function(result){
 [![NPM](https://nodei.co/npm/discogs_marketplace_api.png)](https://nodei.co/npm/discogs_marketplace_api/)
 
 ## TODO:
-* Provide useage example
+* Add total page numbers to result object
 * Add ability to return a promise when no callback is provided
 * Add rate-limiting features
