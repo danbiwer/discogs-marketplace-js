@@ -59,6 +59,31 @@ marketplace.searchByID(search_parameters, function(result){
 });
 ````
 
+####Result
+
+````
+{ 
+	pagination: { 
+		items: 24, 
+		hasNext: false 
+	},
+  	listing: 
+   	[ { title: 'JC Freaks - Number One (12")',
+       condition_sleeve: 'Very Good Plus (VG+)',
+       condition_media: 'Very Good Plus (VG+)',
+       seller: 'IMP_RECORDS',
+       ships_from: 'Greece',
+       price: '€15.00' },
+     { title: 'JC Freaks - Number One (12")',
+       condition_sleeve: 'Near Mint (NM or M-)',
+       condition_media: 'Near Mint (NM or M-)',
+       seller: 'nobodycandestroyme',
+       ships_from: 'Germany',
+       price: '€6.00' }
+    ]
+}
+````
+
 
 ##Installation
 [![NPM](https://nodei.co/npm/discogs_marketplace_api.png)](https://nodei.co/npm/discogs_marketplace_api/)
