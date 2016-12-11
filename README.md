@@ -53,7 +53,7 @@ var search_parameters = {
 	}
 };
 
-DMS.searchByID(search_parameters, function(result){
+marketplace.searchByID(search_parameters, function(result){
 	if(typeof result !== error)
 		console.log(result);
 });
