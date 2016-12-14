@@ -15,7 +15,7 @@ var marketplace = require('DiscogsMarketplace-js');
 
 ````javascript
 marketplace.searchByID('m1234', function(result){
-	if(typeof result !== error)
+	if(!(result instanceof Error))
 		console.log(result);
 });
 ````
@@ -24,7 +24,7 @@ marketplace.searchByID('m1234', function(result){
 
 ````javascript
 marketplace.searchByID("Black Sabbath", function(result){
-	if(typeof result !== error)
+	if(!(typeof result !== Error))
 		console.log(result);
 });
 ````
