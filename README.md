@@ -63,24 +63,30 @@ marketplace.searchByID(search_parameters, function(result){
 
 ````
 { 
-	pagination: { 
-		items: 24, 
-		hasNext: false 
+	pagination: 
+	{ 
+		items: 1112, 
+		hasNext: true 
 	},
   	listing: 
-   	[ { title: 'JC Freaks - Number One (12")',
-       condition_sleeve: 'Very Good Plus (VG+)',
-       condition_media: 'Very Good Plus (VG+)',
-       seller: 'IMP_RECORDS',
-       ships_from: 'Greece',
-       price: '€15.00' },
-     { title: 'JC Freaks - Number One (12")',
-       condition_sleeve: 'Near Mint (NM or M-)',
-       condition_media: 'Near Mint (NM or M-)',
-       seller: 'nobodycandestroyme',
-       ships_from: 'Germany',
-       price: '€6.00' }
-    ]
+   	[ 
+   		{	
+   			title: 'Black Sabbath - Black Sabbath (8-Trk, Album)',
+       		condition_sleeve: 'Very Good (VG)',
+	       	condition_media: 'Very Good (VG)',
+	       	seller: 'easeup',
+	       	ships_from: 'United States',
+	       	price: '$45.00' 
+	   },
+	   { 
+	   		title: 'Black Sabbath - Black Sabbath (2xLP, Album, Dlx, RE, RM, 180)',
+		    condition_sleeve: 'Near Mint (NM or M-)',
+		    condition_media: 'Near Mint (NM or M-)',
+		    seller: 'fishtown19125',
+		    ships_from: 'United States',
+		    price: '$35.00' 
+		}
+	]
 }
 ````
 
