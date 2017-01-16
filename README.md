@@ -54,7 +54,7 @@ var search_parameters = {
 };
 
 marketplace.searchByID(search_parameters, function(result){
-	if(typeof result !== error)
+	if(typeof result !== Error)
 		console.log(result);
 });
 ````
