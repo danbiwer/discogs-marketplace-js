@@ -95,6 +95,7 @@ marketplace.searchByID(search_parameters, function(result){
 [![NPM](https://nodei.co/npm/discogs-marketplace-js.png)](https://nodei.co/npm/discogs-marketplace-js/)
 
 ## TODO:
+* Add id from params to result object
 * Add total page numbers to result object
 * Add ability to return a promise when no callback is provided
 * Add rate-limiting features
