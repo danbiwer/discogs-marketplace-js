@@ -13,6 +13,12 @@ var marketplace = require('discogs-marketplace-js');
 
 ####Search By ID
 
+*Note*: Prefix the release ID with one of the following:
+
+- `m` for Master Release
+- `r` for Release
+- `l` for Label
+
 ````javascript
 marketplace.searchByID('m1234', function(result){
 	if(!(result instanceof Error))
@@ -35,7 +41,7 @@ To specify search filters and pagination options, discogs-marketplace-js will ac
 ````javascript
 var search_parameters = {
 	id: "1067610", //id can also be a string
-	type: "release",
+	type: "release", //one of: 'release', 'master', 'label'
 	filters: {
 		genre: "Rock",
 		style: null,
