@@ -23,7 +23,7 @@ marketplace.searchByID('m1234', function(result){
 ####Search By String
 
 ````javascript
-marketplace.searchByID("Black Sabbath", function(result){
+marketplace.searchByString("Black Sabbath", function(result){
 	if(!(result instanceof Error))
 		console.log(result);
 });
