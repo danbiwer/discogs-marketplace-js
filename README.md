@@ -68,11 +68,13 @@ marketplace.searchByID(search_parameters, function(result){
 ####Result
 
 ````
-{ 
+{
+	id: '1067610',
 	pagination: 
 	{ 
 		items: 1112, 
-		hasNext: true 
+		hasNext: true
+		totalPages : 0 
 	},
   	listing: 
    	[ 
