@@ -11,37 +11,30 @@ JavaScript library to pull information from the Discogs marketplace.  Returns an
 var marketplace = require('discogs-marketplace-js');
 ````
 
-####Search By ID
-
-*Note*: Prefix the release ID with one of the following:
-
-- `m` for Master Release
-- `r` for Release
-- `l` for Label
-
+####Search
 ````javascript
-marketplace.searchByID('m1234', function(result){
+var search_parameters = {
+	id = "Black Sabbath",
+	type = "string"
+	pagination : {
+		page: 1
+	}
+}
+
+marketplace.search(search_parameters, function(result){
 	if(!(result instanceof Error))
 		console.log(result);
 });
 ````
 
-####Search By String
-
-````javascript
-marketplace.searchByString("Black Sabbath", function(result){
-	if(!(result instanceof Error))
-		console.log(result);
-});
-````
 
 ####Filters/Pagination
 To specify search filters and pagination options, discogs-marketplace-js will accept an object as an input.
 
 ````javascript
 var search_parameters = {
-	id: "1067610", //id can also be a string
-	type: "release", //one of: 'release', 'master', 'label'
+	id: "1067610", //id can also be a string, if used with type 'string'
+	type: "release", //one of: 'release', 'master', 'label', 'string'
 	filters: {
 		genre: "Rock",
 		style: null,
@@ -58,11 +51,6 @@ var search_parameters = {
 		sort: "Price Lowest Highest"
 	}
 };
-
-marketplace.searchByID(search_parameters, function(result){
-	if(typeof result !== Error)
-		console.log(result);
-});
 ````
 
 ####Result
@@ -70,6 +58,7 @@ marketplace.searchByID(search_parameters, function(result){
 ````
 {
 	id: '1067610',
+	type: 'master',
 	pagination: 
 	{ 
 		items: 1112, 
@@ -103,7 +92,5 @@ marketplace.searchByID(search_parameters, function(result){
 [![NPM](https://nodei.co/npm/discogs-marketplace-js.png)](https://nodei.co/npm/discogs-marketplace-js/)
 
 ## TODO:
-* Add id from params to result object
-* Add total page numbers to result object
 * Add ability to return a promise when no callback is provided
 * Add rate-limiting features
