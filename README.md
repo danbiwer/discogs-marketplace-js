@@ -15,7 +15,7 @@ var marketplace = require('discogs-marketplace-js');
 ````javascript
 var search_parameters = {
 	id = "Black Sabbath",
-	type = "string"
+	type = "string",
 	pagination : {
 		page: 1
 	}
