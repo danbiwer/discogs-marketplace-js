@@ -3,19 +3,19 @@
 JavaScript library to pull information from the Discogs marketplace.  Returns an object.
 
 
-##Usage
+## Usage
 
-####Init
+#### Init
 
 ````javascript
 var marketplace = require('discogs-marketplace-js');
 ````
 
-####Search
+#### Search
 ````javascript
 var search_parameters = {
-	id = "Black Sabbath",
-	type = "string",
+	id: "Black Sabbath",
+	type: "string",
 	pagination : {
 		page: 1
 	}
@@ -28,7 +28,7 @@ marketplace.search(search_parameters, function(result){
 ````
 
 
-####Filters/Pagination
+#### Filters/Pagination
 To specify search filters and pagination options, discogs-marketplace-js will accept an object as an input.
 
 ````javascript
@@ -53,7 +53,7 @@ var search_parameters = {
 };
 ````
 
-####Result
+#### Result
 
 ````
 {
@@ -88,7 +88,7 @@ var search_parameters = {
 ````
 
 
-##Installation
+## Installation
 [![NPM](https://nodei.co/npm/discogs-marketplace-js.png)](https://nodei.co/npm/discogs-marketplace-js/)
 
 ## TODO:
